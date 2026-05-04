@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaultLedger - Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a2e; background: #f8f9fa; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        h1 { color: #2d6a4f; font-size: 28px; margin-bottom: 8px; }
+        .subtitle { color: #6c757d; margin-bottom: 32px; font-size: 14px; }
+        h2 { color: #2d6a4f; font-size: 20px; margin-top: 28px; margin-bottom: 12px; border-bottom: 2px solid #e9ecef; padding-bottom: 8px; }
+        p { margin-bottom: 16px; color: #495057; }
+        ul, ol { margin-bottom: 16px; padding-left: 24px; }
+        li { margin-bottom: 8px; color: #495057; }
+        .tip { background: #e8f5e9; padding: 16px; border-radius: 8px; border-left: 4px solid #2d6a4f; margin: 20px 0; }
+        .warning { background: #fff3cd; padding: 16px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 20px 0; }
+        .faq-item { margin-bottom: 20px; }
+        .faq-item h3 { color: #2d6a4f; font-size: 16px; margin-bottom: 8px; }
+        .contact { background: #f0f7ff; padding: 16px; border-radius: 8px; margin-top: 24px; }
+        .contact a { color: #2d6a4f; text-decoration: none; font-weight: 600; }
+        code { background: #e9ecef; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VaultLedger Support</h1>
+        <p class="subtitle">Help center and frequently asked questions</p>
+
+        <h2>Getting Started</h2>
+        <div class="tip">
+            <strong>Quick Start:</strong> VaultLedger works entirely offline. No account creation or internet connection required. Just open the app and start tracking your finances!
+        </div>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Dashboard:</strong> View your financial overview including total balance, income, expenses, and detected subscriptions</li>
+            <li><strong>Transactions:</strong> Add, edit, and categorize income and expense transactions</li>
+            <li><strong>Import:</strong> Import bank statements from CSV and PDF files</li>
+            <li><strong>Budgets:</strong> Set and track spending limits by category</li>
+            <li><strong>Net Worth:</strong> Track your net worth over time with visual charts</li>
+            <li><strong>Subscriptions:</strong> Automatically detect recurring charges from your transaction history</li>
+            <li><strong>Settings:</strong> Manage accounts, security, data export, and backups</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>Is my data safe?</h3>
+            <p>Yes! All data is stored locally on your device with optional AES-256 encryption. You can enable biometric lock (Face ID/Touch ID) for additional security. We never collect or transmit your data to any server.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I import bank statements?</h3>
+            <ol>
+                <li>Go to the <strong>Import</strong> tab</li>
+                <li>Choose <strong>CSV</strong> or <strong>PDF</strong> format</li>
+                <li>Select your bank statement file</li>
+                <li>For CSV: Map the columns to the correct fields</li>
+                <li>Review the imported transactions and confirm</li>
+            </ol>
+        </div>
+
+        <div class="faq-item">
+            <h3>What CSV format is supported?</h3>
+            <p>VaultLedger supports standard bank CSV exports. The required columns are: Date, Description, and Amount. You can map columns during the import process. Supported date formats include: MM/DD/YYYY, DD/MM/YYYY, and YYYY-MM-DD.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How does subscription detection work?</h3>
+            <p>VaultLedger analyzes your transaction history to identify recurring charges with the same merchant and similar amounts. It looks for patterns like monthly, quarterly, or annual charges and displays them in the Subscriptions section.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I backup my data?</h3>
+            <ol>
+                <li>Go to <strong>More → Settings</strong></li>
+                <li>Tap <strong>Backup Data</strong></li>
+                <li>Choose where to save the backup file</li>
+            </ol>
+            <p>To restore: Tap <strong>Restore Backup</strong> and select your backup file.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I export my transactions?</h3>
+            <p>Go to <strong>More → Settings → Export CSV</strong>. This will generate a CSV file that you can share via the iOS share sheet.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Does the app work offline?</h3>
+            <p>Yes! VaultLedger is designed to work completely offline. All features work without an internet connection. The only online features are the support/privacy policy links and the contact support form.</p>
+        </div>
+
+        <div class="warning">
+            <strong>Important:</strong> Since all data is stored locally on your device, please make regular backups. If you delete the app, all data will be permanently lost unless you have a backup.
+        </div>
+
+        <h2>Troubleshooting</h2>
+        <ul>
+            <li><strong>Import not working:</strong> Ensure your CSV file uses UTF-8 encoding and has proper column headers. For PDF, only text-based PDFs are supported (not scanned images).</li>
+            <li><strong>Biometric auth not available:</strong> Make sure Face ID/Touch ID is enabled in your device Settings and that VaultLedger has permission to use it.</li>
+            <li><strong>Backup restore fails:</strong> Ensure the backup file was created by the same version of VaultLedger and hasn't been modified.</li>
+        </ul>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Can't find what you're looking for? We're here to help!</p>
+            <p>Email: <a href="mailto:iocompile67692@gmail.com">iocompile67692@gmail.com</a></p>
+            <p>You can also use the <strong>Contact Support</strong> feature within the app (More → Contact Support).</p>
+        </div>
+    </div>
+</body>
+</html>
