@@ -1,0 +1,17 @@
+# Xcode
+*.xcuserstate
+*.xcuserdatad
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+
+# Screenshots (generated)
+screenshots/
